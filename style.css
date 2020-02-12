@@ -1,5 +1,49 @@
 @import 'http://codepen.io/chrisdothtml/pen/ojLzJK.css';
+.certificate-btns .btn:before,
+.certificate-btns .btn:before {
+    top: 50%;
+    left: -110%;
+}
+.certificate-btns .btn img {
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.certificate-btns .btn:hover img {
+    color: #fff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.certificate-btns .btn img {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+}
+.certificate-btns {
+    height: 90px;
+    margin: auto;
+    font-size: 0;
+    text-align: center;
+    position: absolute;
+    top: 75px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
+    .certificate-btns .btn {
+        display: inline-block;
+        background-color: transparent;
+        width: 125px;
+        height: 125px;
+        line-height: 125px;
+        margin: 0 10px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        opacity: 0.99;
+    }
+
+
+/*Social*/
 .social-btns .btn,
 .social-btns .btn:before,
 .social-btns .btn .fa {
@@ -23,6 +67,14 @@
 
     .social-btns .btn.facebook .fa {
         color: #3b5998;
+    }
+
+    .social-btns .btn.certificate:before {
+        background-color: #3cf;
+    }
+
+    .social-btns .btn.certificate .fa {
+        color: #3cf;
     }
 
     .social-btns .btn.twitter:before {
@@ -98,7 +150,7 @@
     }
 
     .social-btns .profile {
-        top: -220px !important;
+        top: -246px !important;
         width: 150px !important;
         height: 150px !important;
     }
@@ -106,11 +158,11 @@
 .description {
     margin: auto;
     position: absolute;
-    top: -43px;
+    top: -65px;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 90px;
+    height: 100px;
     text-align: center;
 }
 
@@ -126,4 +178,8 @@
 .social-btns .btn .fa {
     font-size: 38px;
     vertical-align: middle;
+}
+.badges {
+    width: 125px;
+    height: 125px;
 }
